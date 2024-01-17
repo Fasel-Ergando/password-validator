@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+/* Utility Classes */
+
+.display-none {
+  display: none;
+}
+
+.matched {
+  list-style-image: url('../Assets/checked.svg');
+}
+
+/* General Styles */
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #001F3F, #39CCCC);
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.userInput { 
+  width: 350px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-right: 25px;
+}
+
+.userInput:focus-within {
+  border-color: skyblue;
+}
+
+.userInputField {
+  position: relative;
+}
+
+.displayPassword {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.svg-openEyes, 
+.svg-closeEyes {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.constraints {
+  font-size: 16px;
+  padding-left: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 10px;
+}
+
+.constraints ul li {
+  margin-block: 13px;
+}
+
+/* Responsive Container */
+@media (max-width: 475px) {
+  .container {
+    padding: 20px;
+  }
+
+  .userInput { 
+    width: 300px;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  .constraints {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .userInput { 
+    width: 100%;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  .constraints {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+}
